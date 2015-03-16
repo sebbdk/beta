@@ -11,17 +11,19 @@
 		<input name="data[User][email]" type="email" id="inputEmail" class="form-control" placeholder="Email address" required>
 
 		<label>Choose platform</label>
-		<select name="data[User][platform]" class="form-control">
+		<select name="data[User][platform]" id="platform" class="form-control">
 			<option value="">Choose</option>
 			<option value="iOS">iOS</option>
-			<option value="iOS">Android</option>
+			<option value="android">Android</option>
 		</select>
 
-		<label>Do you have a IOS developer account?</label>
-		<div class="checkbox">
-			<label>
-				<input  name="data[User][is_iosdeveloper]" type="checkbox" id="dev" value="remember-me"> I have a iOS developer account.
-			</label>
+		<div id="dev-select" style="display: none;">
+			<label>Do you have a IOS developer account?</label>
+			<div class="checkbox">
+				<label>
+					<input  name="data[User][is_iosdeveloper]" type="checkbox" id="dev" value="remember-me"> I have a iOS developer account.
+				</label>
+			</div>
 		</div>
 
 		<div id="dev-info" style="display: none;">
@@ -36,5 +38,17 @@
 <script>
 	$('#dev').on('change', function() {
 		$('#dev-info').toggle();
+	});
+
+	$('#platform').on('change', function() {
+		if($('#platform').val() == "iOS") {
+			$('#dev-select').show();
+			if($('#dev').is(':checked')) {
+				$('#dev-info').show();
+			}
+		} else {
+			$('#dev-select').hide();
+			$('#dev-info').hide();
+		}
 	});
 </script>
