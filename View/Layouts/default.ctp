@@ -26,6 +26,14 @@
 
   </head>
   <body>
-    <?= $this->fetch('content'); ?>   
+    <?= $this->fetch('content'); ?>
+
+    <script src="//track.sebb.dk/js/track.js" type="text/javascript" charset="utf-8"></script>
+    <script>
+      _track('beta_sebb_dk');
+      alert('123');
+    </script>
   </body>
 </html>
+
+
