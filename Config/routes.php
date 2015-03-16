@@ -17,10 +17,8 @@
  * to use (in this case, /app/View/Pages/home.ctp)...
  */
 	Router::connect('/', array('controller' => 'users', 'action' => 'add'));
-/**
- * ...and connect the rest of 'Pages' controller's URLs.
- */
-	Router::connect('/pages/*', array('controller' => 'pages', 'action' => 'display'));
+	Router::connect('/game/:slug', array('controller' => 'users', 'action' => 'add'));
+
 
 /**
  * Load all plugin routes. See the CakePlugin documentation on

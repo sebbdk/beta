@@ -1,7 +1,7 @@
 <div class="container">
 
 	<?php echo $this->Form->create('User', ['class' => 'form-signin']); ?>
-	<input  name="data[User][game_slug]" type="hidden" value="remember-me" />
+	<input  name="data[User][game_slug]" type="hidden" value="<?php echo $gameSlug; ?>" />
 
 		<h2 class="form-signin-heading">Beta invite</h2>
 		<label>Name</label>
