@@ -527,3 +527,21 @@ Request URL: /beta/onewayup
 Stack Trace:
 #0 /Users/sebb/sites/beta/webroot/index.php(99): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #1 {main}
+2015-03-16 19:41:47 Error: [MissingControllerException] Controller class SuersController could not be found.
+Exception Attributes: array (
+  'class' => 'SuersController',
+  'plugin' => NULL,
+)
+Request URL: /beta/suers/index.json
+Stack Trace:
+#0 /Users/sebb/sites/beta/webroot/index.php(99): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-03-16 19:42:31 Error: [MissingControllerException] Controller class SuersController could not be found.
+Exception Attributes: array (
+  'class' => 'SuersController',
+  'plugin' => NULL,
+)
+Request URL: /beta/suers/index.json
+Stack Trace:
+#0 /Users/sebb/sites/beta/webroot/index.php(99): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
