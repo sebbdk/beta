@@ -567,3 +567,13 @@ Stack Trace:
 #3 /Users/sebb/sites/beta/Vendor/cakephp/cakephp/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
 #4 /Users/sebb/sites/beta/webroot/index.php(99): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #5 {main}
+2016-05-12 18:27:33 Error: Fatal Error (1): Class 'CakeEmail' not found in [/Users/sebb/sites/beta/Model/User.php, line 34]
+2016-05-12 18:27:33 Error: [FatalErrorException] Class 'CakeEmail' not found
+Request URL: /beta/moonmachine
+Stack Trace:
+#0 /Users/sebb/sites/beta/Vendor/cakephp/cakephp/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Class 'CakeEmai...', '/Users/sebb/sit...', 34)
+#1 [internal function]: ErrorHandler::handleError(1, 'Class 'CakeEmai...', '/Users/sebb/sit...', 34, Array)
+#2 /Users/sebb/sites/beta/Vendor/cakephp/cakephp/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 1, 'Class 'CakeEmai...', '/Users/sebb/sit...', 34, Array)
+#3 /Users/sebb/sites/beta/Vendor/cakephp/cakephp/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
