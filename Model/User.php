@@ -24,6 +24,8 @@ class User extends AppModel {
 	);
 
 	public function afterSave($created, $options = array()) {
+		parent::afterSave($created, $options);
+		
 		if($created) {
 			$property = $this->Property->find('first', [
 				'conditions' => [
