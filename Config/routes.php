@@ -16,7 +16,7 @@
  * its action called 'display', and we pass a param to select the view file
  * to use (in this case, /app/View/Pages/home.ctp)...
  */
-	Router::connect('/', array('controller' => 'users', 'action' => 'add'));
+	Router::connect('/:slug', array('controller' => 'users', 'action' => 'add'));
 	Router::connect('/game/:slug', array('controller' => 'users', 'action' => 'add'));
 
 
